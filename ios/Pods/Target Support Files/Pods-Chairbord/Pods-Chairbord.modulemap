@@ -1,0 +1,6 @@
+module Pods_Chairbord {
+  umbrella header "Pods-Chairbord-umbrella.h"
+
+  export *
+  module * { export * }
+}

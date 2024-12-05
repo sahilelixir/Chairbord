@@ -1,0 +1,1 @@
+export const REACT_APP_BASE_URL = "http://192.168.196.165:3000/v1/api"

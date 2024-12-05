@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/cf_dimen_2"
+        app:cardCornerRadius="@dimen/cf_dimen_24"
+        app:cardElevation="@dimen/cf_dimen_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_delete_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/cf_dimen_4"
+            app:srcCompat="@drawable/ic_delete" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_saved_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/cf_dimen_4"
+        app:cardElevation="@dimen/cf_dimen_4"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/cf_dimen_16"
+            android:layout_marginVertical="@dimen/cf_dimen_8">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_bank_icon"
+                android:layout_width="@dimen/cf_dimen_28"
+                android:layout_height="@dimen/cf_dimen_28"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cf_ic_bank_placeholder" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/cf_dimen_8"
+                android:textSize="@dimen/cf_text_size_12"
+                app:layout_constraintBottom_toBottomOf="@id/iv_bank_icon"
+                app:layout_constraintStart_toEndOf="@id/iv_bank_icon"
+                app:layout_constraintTop_toTopOf="@id/iv_bank_icon"
+                app:srcCompat="@drawable/cf_ic_bank_placeholder"
+                tools:text="Your Bank" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_card_network"
+                android:layout_width="@dimen/cf_dimen_28"
+                android:layout_height="@dimen/cf_dimen_28"
+                android:layout_marginTop="@dimen/cf_dimen_8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_bank_icon"
+                app:srcCompat="@drawable/cf_card_vendor_master" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_mask_card_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/cf_dimen_8"
+                android:text="5105 XXXX XXXX 5100"
+                android:textSize="@dimen/cf_text_size_12"
+                app:layout_constraintStart_toEndOf="@id/iv_bank_icon"
+                app:layout_constraintTop_toTopOf="@id/iv_card_network"
+                app:layout_constraintBottom_toBottomOf="@id/iv_card_network"
+                app:srcCompat="@drawable/cf_ic_bank_placeholder" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_saved_card_cvv"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cf_dimen_8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_card_network"
+                app:layout_constraintWidth_percent="0.48">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_saved_card_cvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_card_cvv"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
+                    android:paddingVertical="7dp"
+                    android:textSize="@dimen/cf_text_size_12" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_pay_now"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cf_dimen_8"
+                android:enabled="false"
+                android:text="@string/pay_now"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_card_network"
+                app:layout_constraintWidth_percent="0.48" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

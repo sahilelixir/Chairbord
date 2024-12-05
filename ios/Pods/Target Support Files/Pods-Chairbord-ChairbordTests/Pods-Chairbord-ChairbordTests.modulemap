@@ -1,0 +1,6 @@
+module Pods_Chairbord_ChairbordTests {
+  umbrella header "Pods-Chairbord-ChairbordTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

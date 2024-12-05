@@ -1,0 +1,26 @@
+const data = {
+    "RCBACK": {
+        "image": {
+            "name": "1000000038.jpg",
+            "type": "image/jpeg",
+            "uri": "file:///data/user/0/com.chairbord/cache/rn_image_picker_lib_temp_b526816e-a2cd-421d-9edb-da440249a967.jpg"
+        },
+        "imageType": "RCBACK"
+    },
+    "RCFRONT": {
+        "image": {
+            "name": "1000000042.jpg",
+            "type": "image/jpeg",
+            "uri": "file:///data/user/0/com.chairbord/cache/rn_image_picker_lib_temp_eef6dc5e-e33f-42d9-bd1d-ff03d5607e7a.jpg"
+        },
+        "imageType": "RCFRONT"
+    },
+    "VEHICLEFRONT": {
+        "image": {
+            "name": "1000000042.jpg",
+            "type": "image/jpeg",
+            "uri": "file:///data/user/0/com.chairbord/cache/rn_image_picker_lib_temp_63ef4aec-3840-420a-9d2e-a3ed78051224.jpg"
+        },
+        "imageType": "VEHICLEFRONT"
+    }
+}
